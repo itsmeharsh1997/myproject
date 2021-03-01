@@ -35,6 +35,8 @@ login.addEventListener('click', function () {
 
     if (email.value == 0 && password.value == 0) {
 
+        alert("Access Denied");
+
         alert("Please Enter Both");
 
     }

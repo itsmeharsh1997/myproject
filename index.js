@@ -19,13 +19,12 @@ btn.addEventListener("click", function () {
 
 
 
-function getInputValue() 
-{
+function getInputValue() {
 
-var a = document.getElementById("email").value;
-var b = document.getElementById("password").value;
-console.log(a)
-console.log(b)
+    var a = document.getElementById("email").value;
+    var b = document.getElementById("password").value;
+    console.log(a)
+    console.log(b)
 }
 
 
@@ -33,15 +32,31 @@ console.log(b)
 var login = document.getElementById("but")
 
 login.addEventListener('click', function () {
-    if (confirm("Click Ok To Proceed")) {
-        alert("You Are Logged In")
+
+    if (email.value == 0 && password.value == 0) {
+
+        alert("Please Enter Both");
+
     }
-    else
-        alert("Acess Denied")
+
+    else if (email.value == 0) {
+
+        alert("Please Enter Your Email");
+
+    }
+
+    else if (password.value == 0) {
+
+        alert("Please Enter Your Password ");
+
+    }
+
+
+    else {
+        var v = alert("You Are Now Logged In")
+        confirm("Click Ok To Proceed")
+    }
+
+
 
 })
-
-
-
-
-

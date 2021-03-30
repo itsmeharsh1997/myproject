@@ -1,0 +1,110 @@
+body
+{
+    background: whitesmoke;
+}
+
+::selection
+{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.heading
+{
+    text-align: center;
+    font-family: roboto;
+    font-size: 60px;
+    color: rgb(255, 247, 247);
+    box-shadow: 0px 0px 6px rgb(255, 255, 255);
+    background: rgb(2, 82, 255);
+    padding: 10px 10px;
+    border-radius: 30px;
+}
+
+
+.upper
+{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.addition
+{
+    padding: 10px;
+}
+
+input[type=submit]
+{
+    border-radius: 30px;
+    padding: 10px 40px;
+    font-size: 25px;
+    text-align: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(2, 82, 255);
+    color: white;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+
+}
+
+input[type=submit]:hover
+{
+  
+    color: white;
+    box-shadow: none;
+}
+
+input[type=text]
+{
+    border: 2px solid blue;
+    border-radius: 30px;
+    padding: 10px 40px;
+    margin: 10px;
+    font-size: 15px;
+    text-align: center;
+    outline: none;
+    color: blue;
+    background-color: white;
+}
+
+
+
+.arithematic
+{
+    border-radius: 40px;
+    padding: 10px;
+    width: fit-content;
+    margin: auto;
+    background: whitesmoke;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.main
+{
+    width: fit-content;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 13px;
+    box-shadow: 2px 2px 12px rgb(41, 41, 41);
+    background: rgb(0, 81, 255);
+    padding: 10px 10px;
+}
+
+@media only screen and (max-width:656px)
+{
+    .main
+    {
+        display: block;
+    }
+    
+}

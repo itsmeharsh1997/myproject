@@ -7,63 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
+    <script src="index.js"></script>
 </head>
 
 <body>
-
     <div class="main">
+        <p>Bike Number Plate Generator</p>
 
-        <div class="upper">
-            <div class="heading">CALCULATOR</div>
-            <div class="numberenter">
-                <input type="text" class="initial" id="varX" placeholder="Enter First Number" required value="" />
-                <br>
-                <input type="text" class="initial" id="varY" placeholder="Enter Second Number" required value="" />
-                <br>
-                <input type="text" class="initial" id="varResult" placeholder="Output" readonly />
-                <br>
-            </div>
+        <button onclick="myFunction()">Try it</button>
+        <div class="boxx">
+        <p id="demo"></p>
         </div>
+        <br>
+        <button onclick="myFunction1()">Clear</button>
+        <p id="demo1"></p>
 
-
-        <div class="arithematic">
-
-            <div class="addition">
-                <form onsubmit="return add();">
-                    <input type="submit" value="+" />
-                </form>
-            </div>
-
-
-            <div class="addition">
-                <form onsubmit="return subtract();">
-                    <input type="submit" value="-" />
-                </form>
-            </div>
-
-
-            <div class="addition">
-                <form onsubmit="return multiply();">
-                    <input type="submit" value="x" />
-                </form>
-            </div>
-
-            <div class="addition">
-                <form onsubmit="return divide();">
-                    <input type="submit" value="/" />
-                </form>
-            </div>
-
-            <div class="addition">
-                <form onsubmit="return clear();">
-                    <input type="submit" value="Clear" />
-                </form>
-            </div>
-
-        </div>
     </div>
 
-    <script src="index.js"></script>
+
+
+  
 </body>
 
 </html>
